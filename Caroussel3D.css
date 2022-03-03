@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+html, body {
+    height: 100%;
+  }
+  
+body {
+  overflow: hidden;
+  color: #fff;
+  display: flex;
+  background: #000000;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  display: flex;
+  flex-direction: column;
+  background-image: url("./images/LogoWakandaDev.PNG");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+#signature {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+#container, #carousel {
+  position: relative;
+  display: flex;
+  margin: auto;
+  transform-style: preserve-3d;
+  transform: rotateX(-10deg);
+}
+
+#container img {
+  transform-style: preserve-3d;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 200px;
+  font-size: 50px;
+  text-align: center;
+  box-shadow: 0 0 8px #fff;
+  -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
+}
+
+#container img:hover {
+    box-shadow: 0 0 15px #fffd;
+  -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0007);
+}
+
+#sol {
+  width: 900px;
+  height: 900px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%,-50%) rotateX(90deg);
+  background: -webkit-radial-gradient(center center, farthest-side , #9993, transparent);
+}
+
+@keyframes spin {
+  from{
+    transform: rotateY(0deg);
+  } to{
+    transform: rotateY(360deg);
+  }
+}
+@keyframes spinRevert {
+  from{
+    transform: rotateY(360deg);
+  } to{
+    transform: rotateY(0deg);
+  }
+}
+
+/*Style elements pages...............................................................................*/
+#mutu {
+  width: 100%;
+}
+
+#prem {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+#showcontainer {
+  width: 50%;
+  height: 100%;
+  padding-top: 20%; 
+    }
+
+#welcome {
+  width: 50%;
+}
+
+#welcome > aside {
+  height: 100%;
+  padding: auto;
+}
+
+.portrait {
+  margin: auto;
+  padding-top: 5%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.present {
+  padding: 5%;
+}
+
+.present p {
+  width: 80%;
+  margin: auto;
+  font-size: x-large;
+  background-color:#fff;
+  color:#000000;
+  opacity: 0.4;
+  padding: 2%;
+  border-radius: 1em;
+}
+
+.face {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+
+#facepict {
+  width: 30%;
+  height: 50%;
+  border-radius: 1em;
+}
+
+.curivitae {
+  width: 100%;
+  height: 50%;
+}
+
+.cvdets {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+      
+
+  
+          
